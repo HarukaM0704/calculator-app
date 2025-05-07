@@ -1,17 +1,59 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- 文字で「電卓アプリ」と表示 -->
-     <h1>電卓アプリ</h1>
-    <!-- 「123」というボタンを押したらformに入力されるようにしたい -->
-    <input type="text" id="content" value=""> 
-    <button value="123" type="button" id="number-button">123</button>
+    <h1>電卓アプリ</h1>
+    <div class="calc-area">
+        <!-- 数字ボタン -->
+        <input type="text" id="content" value="">
+        <div class="buttons">
+            <div class="number-block">
+                <button value="1" type="button" class="number button">1</button>
+                <button value="2" type="button" class="number button">2</button>
+                <button value="3" type="button" class="number button">3</button>
+            </div>
+            <div class="number-block">
+                <button value="4" type="button" class="number button">4</button>
+                <button value="5" type="button" class="number button">5</button>
+                <button value="6" type="button" class="number button">6</button>
+            </div>
+            <div class="number-block">
+                <button value="7" type="button" class="number button">7</button>
+                <button value="8" type="button" class="number button">8</button>
+                <button value="9" type="button" class="number button">9</button>
+            </div>
+            <div class="number-block">
+                <button value="0" type="button" class="number button">0</button>
+            </div>
+        </div>
+
+        <!-- 演算子ボタン -->
+        <div class="operator-block">
+            <button value="+" type="button" class="operator button">+</button>
+            <button value="-" type="button" class="operator button">-</button>
+            <button value="*" type="button" class="operator button">*</button>
+            <button value="/" type="button" class="operator button">/</button>
+        </div>
+        <div class="operator-block">
+            <button value="**" type="button" class="operator button">^</button>
+            <button value="**0.5" type="button" class="operator button">√</button>
+            <!-- 「=」ボタンを押したらフォーム内の式が計算される -->
+            <button value="=" type="button" class="calc">=</button>
+            <!-- 「CLR」ボタンを押したらフォーム内が初期化される -->
+            <button value="" type="button" class="clr">CLR</button>
+        </div>
+    </div>
+
     <script src="main.js"></script>
 </body>
+
 </html>

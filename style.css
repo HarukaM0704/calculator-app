@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Arial'
+}
+
+body {
+    text-align: center;
+}
+
+.calc-area {
+    
+    width:fit-content;
+    margin: 10px auto;
+    padding:10px;
+    background-color:darkgray;
+    border-radius: 10px;
+}
+
+#content {
+    height:50px;
+    width:200px;
+    margin:10px;
+    padding:10px;
+    font-size:20px;
+    border: 3px solid;
+}
+
+.number-block {
+    margin:5px;
+}
+
+.operator-block {
+    margin:5px
+}
+
+button {
+    width:50px;
+    height: 30px;
+    border-radius: 10px;
+}
