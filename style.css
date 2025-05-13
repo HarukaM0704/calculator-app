@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Arial';
-    color: black;
 }
 
 body {
@@ -40,4 +39,5 @@ button {
     width:50px;
     height: 30px;
     border-radius: 10px;
+    color:black;
 }
